@@ -1,0 +1,141 @@
+/* styles.css */
+
+body {
+    background-image: url("/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: margin-right 0.5s;
+}
+
+h1 {
+    font-size: 4.5em; /* Adjusted for better scaling on mobile */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    background-color: #1e1c1ce2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#inputs {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of inputs */
+    justify-content: center; /* Center inputs horizontally */
+}
+
+.input {
+    width: 40px;
+    border: none;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    margin: 0 5px; /* Adjusted margin for better spacing on mobile */
+    text-align: center;
+    font-size: 1.5em; /* Adjusted for better scaling on mobile */
+    color: #000;
+}
+
+.input:focus {
+    border-bottom: 3px solid orange;
+    outline: none;
+}
+/* Footer */
+.footer {
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer p:hover {
+    text-decoration: underline;
+}
+
+
+
+
+#nameInput {
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #000;
+    width: 80%; /* Adjusted width for better scaling on mobile */
+    max-width: 300px;
+}
+
+#message {
+    margin-top: 10px;
+}
+
+#hint {
+    margin-top: 5px;
+    color: red;
+    display: none;
+}
+
+#redirectButton,
+#clearButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%; /* Adjusted width for better scaling on mobile */
+    max-width: 300px;
+}
+
+#redirectButton:hover,
+#clearButton:hover {
+    background-color: #ff8c00;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .container {
+        margin-right: 40%; /* Shift container to the left on larger screens */
+        text-align: left;  /* Align text to the left on larger screens */
+    }
+
+    h1 {
+        font-size: 6.1em; /* Larger font size for heading on larger screens */
+    }
+
+    .input {
+        margin: 0 10px; /* More spacing between inputs on larger screens */
+        font-size: 36px; /* Larger font size for inputs on larger screens */
+    }
+
+    #nameInput,
+    #redirectButton,
+    #clearButton {
+        width: auto; /* Use default width on larger screens */
+        max-width: none; /* No max-width on larger screens */
+    }
+}

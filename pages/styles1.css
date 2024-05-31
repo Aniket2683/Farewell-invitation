@@ -1,0 +1,109 @@
+/* styles1.css */
+
+body {
+  /* Set ocean theme background image */
+  background-image: url("/bg1.jpg");
+  /* Ensure background image covers the entire viewport without repeating */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #ffffff; /* White text color */
+  font-family: Arial, sans-serif; /* Default font */
+  min-height: 100vh; /* Ensure the background image covers the full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+.container {
+  max-width: 800px; /* Set max width for better readability */
+  margin: 0 auto; /* Center align container */
+  text-align: center; /* Center align text */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+h1 {
+  font-size: 3.7em; /* Larger heading for emphasis */
+}
+
+div p {
+  font-size: 1.9em; /* Larger paragraph font size */
+  margin-bottom: 20px; /* Add margin below paragraphs */
+  color: rgba(0, 0, 0, 0.705);
+  font-weight: 700;
+}
+
+div p:hover {
+  text-decoration: underline;
+  color:#ffffff96;
+}
+
+/* Responsive video container */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Footer */
+.footer {
+  position:relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #1e1c1c89;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer p:hover {
+  text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Reduce padding for better spacing on mobile */
+  }
+
+  h1 {
+    font-size: 3em; /* Larger heading font size for mobile */
+  }
+
+  p {
+    font-size: 1.3em; /* Slightly larger paragraph font size for mobile */
+    margin-bottom: 25px; /* Increase margin below paragraphs for spacing */
+  }
+}
+
+/* Media query for even smaller screens (like phones) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3.5em; /* Even larger heading font size for phones */
+    margin-bottom: 20px; /* Add margin below the heading */
+  }
+
+  p {
+    font-size: 1.4em; /* Larger paragraph font size for phones */
+    margin-bottom: 30px; /* Increase margin below paragraphs for better spacing */
+  }
+}
