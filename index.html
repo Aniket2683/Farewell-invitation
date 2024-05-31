@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hoppers Assemble!!</title>
+<link rel="stylesheet" href="style-bg2.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Welcome Guys!!!</h1>
+  <p>Enter the correct OTP to unlock the treasure!</p>
+  <!-- Name input field -->
+  <input id="nameInput" type="text" placeholder="Enter your first name">
+  
+  <!-- OTP inputs -->
+  <div id="inputs" class="inputs">
+      <input class="input" type="text" inputmode="numeric" maxlength="1" />
+      <input class="input" type="text" inputmode="numeric" maxlength="1" />
+      <input class="input" type="text" inputmode="numeric" maxlength="1" />
+      <input class="input" type="text" inputmode="numeric" maxlength="1" />
+      <input class="input" type="text" inputmode="numeric" maxlength="1" />
+      <input class="input" type="text" inputmode="numeric" maxlength="1" />
+  </div>
+  
+  <!-- Container for incorrect OTP message and hint -->
+  <div class="message-container">
+    <p id="message" style="color: red;"></p>
+    <p id="hint"></p>
+  </div>
+  
+  <!-- Buttons for clearing and redirecting -->
+  <button id="redirectButton">Unlock Treasure!</button>
+  <button id="clearButton">Clear</button>
+
+
+  
+</div>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Hoppers Assemble. All rights reserved.</p>
+  </footer>
+
+<script src="script-demo.js"></script>
+</body>
+</html>
